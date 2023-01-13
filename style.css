@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.logo,
+.menu {
+  height: 30px;
+}
+
+.header_content {
+  margin: 0 10%;
+  margin-top: 100px;
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#lets_connect {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.social_icons {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.ellipse_3 {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  left: 80%;
+  top: 15%;
+  z-index: -1;
+}
+
+.ellipse_12 {
+  position: absolute;
+  width: 24.14px;
+  height: 12.07px;
+  left: 80%;
+  top: 90%;
+  background: #6070ff;
+  transform: rotate(-176.08deg);
+}
+
+.rectangle_5 {
+  position: absolute;
+  width: 161.41px;
+  height: 28.87px;
+  left: 35%;
+  top: 65%;
+  background: #ebebff;
+  transform: rotate(23.34deg);
+}
+
+.ellipse_5 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 15%;
+  top: 15%;
+  border-radius: 50%;
+
+  /* Primary/B100 */
+
+  background: #6070ff;
+  transform: rotate(52.97deg);
+}
+
+@media only screen and (max-width: 425px) {
+  /* Small smartphones [325px -> 425px] */
+  .ellipse_3 {
+    width: 115px;
+    height: 115px;
+  }
+
+  .rectangle_5 {
+    width: 68.06px;
+    height: 12.18px;
+  }
+
+  .ellipse_5 {
+    width: 11px;
+    height: 10px;
+  }
+}
