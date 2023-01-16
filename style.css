@@ -26,11 +26,19 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 12px 24px;
   background-color: #3c3a39;
 }
 
-.logo,
+.logo {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
 .menu {
   height: 24px;
   cursor: pointer;
@@ -41,8 +49,8 @@ nav {
 }
 
 .header_content {
-  padding: 0 8%;
-  padding-top: 100px;
+  padding: 0 24px;
+  padding-top: 120px;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -61,8 +69,8 @@ nav {
 .header_content h1 {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 56px;
   line-height: 52px;
 }
 
@@ -89,82 +97,10 @@ a {
 }
 
 .social_icons {
-  width: 140px;
-  justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
   list-style: none;
 }
 
-.ellipse_3 {
-  position: absolute;
-  width: 225px;
-  height: 225px;
-  left: 80%;
-  top: 15%;
-  z-index: -1;
-}
-
-.ellipse_12 {
-  position: absolute;
-  width: 24.14px;
-  height: 12.07px;
-  left: 80%;
-  top: 90%;
-  background: #6070ff;
-  transform: rotate(-176.08deg);
-}
-
-.rectangle_5 {
-  position: absolute;
-  width: 161.41px;
-  height: 28.87px;
-  left: 35%;
-  top: 65%;
-  background: #ebebff;
-  transform: rotate(23.34deg);
-}
-
-.ellipse_5 {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 15%;
-  top: 15%;
-  border-radius: 50%;
-
-  /* Primary/B100 */
-
-  background: #6070ff;
-  transform: rotate(52.97deg);
-}
-
-.bg {
-  /* header background shape-desktop */
-
-  position: absolute;
-  width: 1440px;
-  height: 916px;
-  left: 0;
-  top: 1px;
-
-  /* Neutrals/N0 */
-  background: #fff;
-}
-
-@media only screen and (max-width: 425px) {
-  /* Small smartphones [325px -> 425px] */
-  .ellipse_3 {
-    width: 115px;
-    height: 115px;
-  }
-
-  .rectangle_5 {
-    width: 68.06px;
-    height: 12.18px;
-  }
-
-  .ellipse_5 {
-    width: 11px;
-    height: 10px;
-  }
+.social_icons li {
+  margin: 10px;
 }
