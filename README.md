@@ -70,7 +70,7 @@ Follow the following steps to get the project running.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need git, npm and a web browser.
 
 <!--
 Example command:
@@ -84,19 +84,18 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
 Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/dara-soji/microverse-portfolio.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
+There will be no need to install dependencies on this project
 <!--
 Example command:
 
@@ -110,6 +109,9 @@ Example command:
 
 To run the project, execute the following command:
 
+- Go to the project folder where it was cloned
+- Right click on the index.html
+- Open with the browser of your choice
 <!--
 Example command:
 
@@ -122,6 +124,8 @@ Example command:
 
 To run tests, run the following command:
 
+N/A
+
 <!--
 Example command:
 
@@ -133,6 +137,8 @@ Example command:
 ### Deployment
 
 You can deploy this project using:
+
+N/A
 
 <!--
 Example:
