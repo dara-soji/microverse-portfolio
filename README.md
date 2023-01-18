@@ -33,7 +33,7 @@
 # 📖 [Microverse Portfolio] <a name="about-project"></a>
 
 
-**[Microverse Portfolio]** is a project created to make a portfolio fo students of microverse. The first step is to start with the setup and the mobile version.
+**[Microverse Portfolio]** is a project created to make a portfolio fo students of microverse. The first step is to start with just HTML and CSS of the mobile version.
 
 ## 🛠 Built With <a name="built-with">HTML and CSS</a>
 
