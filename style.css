@@ -131,6 +131,15 @@ a {
   grid-gap: 24px;
 }
 
+.footer_social_icons {
+  list-style: none;
+  flex-direction: row;
+}
+
+.footer_social_icons li {
+  margin: 0 10px;
+}
+
 .multi_stories img {
   width: 100%;
 }
@@ -331,85 +340,76 @@ a {
   margin: 16px 0;
 }
 
-
-#contact{
+#contact {
   width: 100%;
   padding: 120px 24px;
 }
 
 #contact h4 {
   font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 44px;
-text-align: center;
-color: #172B4D;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
 }
 
-#contact form{
+#contact form {
   width: 100%;
   padding: 4px 0;
   align-items: center;
-
 }
 
-#full_name, #email{
+#full_name,
+#email {
   margin-bottom: 24px;
   width: 100%;
   padding: 14px 16px;
   border: none;
-  border-bottom: 1px solid #DBD8D7;
-   font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-}
-
-#full_name::placeholder, #email::placeholder{
+  border-bottom: 1px solid #dbd8d7;
   font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #979493;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
 
-#message{
+#full_name::placeholder,
+#email::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+#message {
   margin-bottom: 24px;
-  background: #FBF8F7;
+  background: #fbf8f7;
   height: 114px;
   width: 100%;
   border: none;
   padding: 12px;
 }
 
-#message::placeholder{
+#message::placeholder {
   font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #3C3A39;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
 }
 
-footer{
+footer {
   width: 100vw;
   padding: 25px 0;
   align-items: center !important;
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
 }
 
-.footer_social_icons{
-      list-style: none;
-    flex-direction: row;
-}
-
-.footer_social_icons li{
-  margin: 0 10px;
-}
-
-.footer_social_icons li a img{
+.footer_social_icons li a img {
   height: 20px;
 }
