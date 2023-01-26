@@ -21,6 +21,11 @@ body {
 header {
   position: sticky;
   top: 0;
+  z-index: 10000;
+}
+
+.desktop_nav {
+  display: none;
 }
 
 nav {
@@ -140,10 +145,6 @@ a {
   margin: 0 10px;
 }
 
-.multi_stories img {
-  width: 100%;
-}
-
 .multi_stories h3 {
   font-family: 'Crete Round', serif;
   font-style: normal;
@@ -197,6 +198,7 @@ a {
   border: none;
   border: 1px solid #f55800;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -404,6 +406,11 @@ a {
   width: 100%;
   border: none;
   padding: 12px;
+  font-family: 'Roboto', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 #message::placeholder {
@@ -424,4 +431,235 @@ footer {
 
 .footer_social_icons li a img {
   height: 20px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 26px 151px;
+  }
+
+  .logo {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .desktop_nav {
+    display: flex;
+  }
+
+  .desktop_nav li {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    list-style: none;
+    color: #fff;
+    margin-left: 32px;
+  }
+
+  .multi_stories img {
+    width: 100%;
+  }
+
+  .desktop_nav li a img {
+    height: 18px;
+  }
+
+  .header_content {
+    padding-left: 143px;
+    position: relative;
+    background-image: url('https://res.cloudinary.com/david79/image/upload/v1674327353/work%20stuff/deep%20color%20icons/Illustration-header_rvf9xd.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-x: right;
+    background-position-y: -20px;
+  }
+
+  .header_content h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .header_content h3 {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .header_content p {
+    margin-top: 24px;
+    font-size: 20px;
+    width: 566px;
+    line-height: 32px;
+  }
+
+  .social_icons {
+    position: absolute;
+    top: 279px;
+    flex-direction: column;
+    left: 40px;
+  }
+
+  #works {
+    padding: 130px 141px;
+  }
+
+  .about_me_content h1 {
+    line-height: 82px;
+  }
+
+  #works h1 {
+    position: relative;
+    width: 100%;
+    border: none;
+  }
+
+  #works h1::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    background-color: #212121;
+    height: 1px;
+    width: 70%;
+    right: 0;
+  }
+
+  .projects {
+    margin-top: 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .multi_stories {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    flex-direction: row;
+    height: 448px;
+  }
+
+  .multi_stories_content {
+    margin-left: 24px;
+  }
+
+  .multi_stories_content h3 {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .multi_stories_content p {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .multi_stories_content ul {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .multi_stories_content button {
+    margin-top: 0;
+  }
+
+  .project {
+    height: 435px;
+    width: 369px;
+    cursor: pointer;
+    overflow: hidden;
+    background-image: url('https://s3-alpha-sig.figma.com/img/7e29/831a/679f12c86bb033399c6b604b71698f3c?Expires=1675641600&Signature=HQZ90jxbjfrJ4rEp485YY1X9P0mXO6hL2M-H7mA~OKkYV07hWsP0qNbs1RGdYyoebNP9SpJws8OvqIV-pW7RGvkjENYQS1Yp58j7wIQ3cZg3F0IiAGuCALtPurK1EXjSp4JRN4-S0g4HabuAMRXhJF-WHNALhNsq5UgSvfdxbVqBfMM6y5Hxb38NUITsUFb4~Z7NLrTMB4ru~y2nAsbedf4dEV2NZZIj6TGFPY8mTL5mTnh5~28ERadEsPpPY3lHcnzqP4TcMH988ubbCWZDWR10nfBes-rUndASKTIPi1vKZZ74J42RpkkvGQakv1RftflSNJ3F00w7PIC07CVtgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .project button {
+    display: none;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(100%);
+  }
+
+  .project_info {
+    transition: all 0.5s ease-in-out;
+    padding: 16px;
+  }
+
+  .project:hover .project_info {
+    transform: translateY(-100%);
+  }
+
+  .project:hover button {
+    display: block;
+    transform: translateY(0);
+  }
+
+  .project_info ul {
+    margin-top: 24px;
+  }
+
+  .project_info p {
+    margin-top: 24px;
+    font-size: 17px;
+  }
+
+  #about {
+    padding: 130px 142px;
+    background-image: url('https://res.cloudinary.com/david79/image/upload/v1674579763/about_me_bg_jypfej.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 99px;
+  }
+
+  .about_me_content {
+    width: 566px;
+  }
+
+  .about_me_content p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .lang_skill_frame {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .category_heading h3 {
+    line-height: 44px;
+  }
+
+  .cate_list {
+    width: 260px;
+    align-items: flex-start;
+  }
+
+  .cate_list ul {
+    align-items: flex-start;
+    margin: 36px 0;
+  }
+
+  #contact {
+    padding: 130px 135px;
+    flex-direction: row;
+  }
+
+  #contact h4 {
+    width: 455px;
+    font-size: 40px;
+    line-height: 52px;
+    margin-right: 24px;
+  }
+
+  #contact form {
+    flex: 1;
+    padding: 0;
+    align-items: flex-start;
+  }
 }
