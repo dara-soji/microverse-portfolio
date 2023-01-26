@@ -13,6 +13,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -61,6 +62,15 @@
     <li><a href="">N/A</a></li>
   </ul>
 </details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[It has header tag which contains a nav tag for navigations]**
+- **[It has Section tag which contains the Headline, Works, About Me, and contact me sections ]**
+- **[It has a footer which contains the social media icons]**
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
