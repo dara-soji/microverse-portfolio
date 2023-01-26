@@ -186,7 +186,7 @@ a {
 
 .btn {
   padding: 12px;
-  background-color: #ff6b00;
+  background-color: #f55800;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -195,6 +195,18 @@ a {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+  border: 1px solid #f55800;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
+.btn:active {
+  color: #f4f1f0;
+  background-color: #e05304;
 }
 
 .project {
